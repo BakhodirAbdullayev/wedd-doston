@@ -57,9 +57,10 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.8 }}
+      data-aos="fade-up"
+      // initial={{ opacity: 0, y: 20 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{ duration: 0.5, delay: 0.8 }}
       className={`${playfair.className} text-center mt-4 pb-3`}
     >
       <h2 className="text-xl text-[#a9a05c] mb-4 font-medium">
@@ -71,7 +72,7 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
             <div key={unit} className="flex flex-col items-center">
               <AnimatePresence mode="popLayout">
                 <motion.span
-                  key={value} // Ensure proper animation when value changes
+                  key={value}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}

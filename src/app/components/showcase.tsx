@@ -2,12 +2,14 @@ import { FC } from "react";
 import { greatVibes } from "@/fonts";
 import Flowers from "./flowers";
 import Logo from "./logo";
+import Line from "./line";
+import ScrollDown from "./scroll-down";
 
 const Showcase: FC = (): JSX.Element => {
   return (
-    <>
+    <div className="h-svh flex flex-col gap-5">
       <nav
-        className="flex items-center justify-between p-4 px-8 mb-12"
+        className="flex items-center justify-between p-4 px-8 mb-20"
         data-aos="fade-down"
       >
         <Logo />
@@ -31,7 +33,11 @@ const Showcase: FC = (): JSX.Element => {
           Sevinch
         </h1>
       </div>
-    </>
+      <div className="flex-1 flex flex-col items-center justify-between pt-16">
+        <Line />
+        <ScrollDown />
+      </div>
+    </div>
   );
 };
 
