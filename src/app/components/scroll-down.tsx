@@ -24,7 +24,7 @@ export default function ScrollDown() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.5 }}
-      // className="fixed bottom-4 left-1/2 -translate-x-1/2 mb-10"
+      className="fixed bottom-4 left-1/2 -translate-x-1/2 mb-10"
     >
       <button className="text-[#a9a05c] w-10 h-16 rounded-full flex justify-center items-center border-1 border-[#a9a05c] mb-10">
         <motion.div
